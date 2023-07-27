@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+
+    @keyframes changeColor {
+      0% {
+        color: red;
+      }
+      16.6% {
+        color: orange;
+      }
+      33.3% {
+        color: yellow;
+      }
+      50% {
+        color: lime;
+      }
+      66.6% {
+        color: blue;
+      }
+      83.3% {
+        color: indigo;
+      }
+      100% {
+        color: violet;
+      }
+    }
+
+    .rotating-text {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-size: 10em;
+      animation: rotate 3s linear infinite, changeColor 7s linear infinite;
+    }
+  </style>
+  <title>hello</title>
+</head>
+<body>
+<div class="rotating-text">Hello</div>
+</body>
+</html>
